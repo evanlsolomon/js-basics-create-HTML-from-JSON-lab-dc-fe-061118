@@ -15,7 +15,14 @@ function listCast(cast){
   }
 }
 
-function listReviews()
+function listReviews(reviews){
+  for(var review of reviews){
+  let newReview = document.createElement("li");
+  newReview.innerHTML = person.role + ": " + person.actor;
+  document.getElementById('cast').appendChild(newCastMember)
+  }
+}
+
 
 function clickedMovie(event){
   selectedMovieName = event.srcElement.id;
