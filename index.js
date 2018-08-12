@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentloaded", (e) => {
-});
+
 document.getElementById('Titanic').addEventListener('click', clickedMovie);
 document.getElementById('Terminator 2').addEventListener('click', clickedMovie);
 
