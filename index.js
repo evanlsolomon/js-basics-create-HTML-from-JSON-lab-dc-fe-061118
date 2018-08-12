@@ -24,7 +24,8 @@ function listReviews(reviews){
 
 
 function clickedMovie(event){
-  document.getElementById
+  document.getElementById('cast').innerHTML="";  
+  document.getElementById('reviews').innerHTML="";
   selectedMovieName = event.srcElement.id;
   console.log('clicked ' + selectedMovieName);
   headerData = ['title', 'director', 'genre', 'filmRating'];
