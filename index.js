@@ -25,6 +25,8 @@ function clickedMovie(event){
   document.getElementById('poster').src = movies[selectedMovieName].poster;
   mainData = ['description', 'audienceScore'];
   mainData.map(setInnerHTML);
-  cast = movies[selectedMovieName].cast
-  listCast(cast)
+  cast = movies[selectedMovieName].cast;
+  listCast(cast);
+  reviews = movies[selectedMovieName].reviews;
+  listReviews(reviews);
 }
