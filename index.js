@@ -1,4 +1,30 @@
 document.addEventListener("DOMContentloaded", (e) => {
-  // invoking a function here will make sure it happens on page load
-  // your code here
 });
+document.getElementById('Titanic').addEventListener('click', clickedMovie);
+document.getElementById('Terminator 2').addEventListener('click', clickedMovie);
+
+function setInnerHTML(id){
+    document.getElementById(id).innerHTML = movies[selectedMovieName][id];
+}
+
+function listCast(cast){
+let newCastMember = document.createElement("li");
+  for(var person of cast){
+  debugger
+  newCastMember.innerTEXT = person.role + ", " + person.actor;
+  document.getElementById('cast').appendChild(newCastMember)
+  }
+}
+
+function clickedMovie(event){
+  selectedMovieName = event.srcElement.id;
+  console.log('clicked ' + selectedMovieName);
+  headerData = ['title', 'director', 'genre', 'filmRating'];
+  headerData.map(setInnerHTML);
+  document.getElementById('poster').src = movies[selectedMovieName].poster;
+  mainData = ['description', 'audienceScore'];
+  mainData.map(setInnerHTML);
+  cast = movies[selectedMovieName].cast
+  debugger
+  listCast(cast)
+}
