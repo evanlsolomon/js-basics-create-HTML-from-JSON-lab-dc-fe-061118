@@ -18,7 +18,6 @@ function listReviews(reviews){
   for(var review of reviews){
   let newReview = document.createElement("li");
   newReview.innerHTML = review.username + ": " + review.content;
-  debugger
   document.getElementById('reviews').appendChild(newReview);
   }
 }
