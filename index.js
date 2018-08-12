@@ -18,7 +18,7 @@ function listCast(cast){
 function listReviews(reviews){
   for(var review of reviews){
   let newReview = document.createElement("li");
-  newReview.innerHTML = person.role + ": " + person.actor;
+  newReview.innerHTML = review.person + ": " + review.content;
   document.getElementById('cast').appendChild(newCastMember)
   }
 }
