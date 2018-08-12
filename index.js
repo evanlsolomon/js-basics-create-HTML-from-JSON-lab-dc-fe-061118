@@ -14,6 +14,7 @@ let newCastMember = document.createElement("li");
   newCastMember.innerTEXT = person.role + ", " + person.actor;
   debugger
   document.getElementById('cast').appendChild(newCastMember)
+  debugger
   }
 }
 
