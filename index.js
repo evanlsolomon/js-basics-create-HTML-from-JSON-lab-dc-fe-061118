@@ -19,7 +19,8 @@ function listReviews(reviews){
   for(var review of reviews){
   let newReview = document.createElement("li");
   newReview.innerHTML = review.username + ": " + review.content;
-  document.getElementById('cast').appendChild(newCastMember)
+  debugger
+  document.getElementById('reviews').appendChild(newReview);
   }
 }
 
