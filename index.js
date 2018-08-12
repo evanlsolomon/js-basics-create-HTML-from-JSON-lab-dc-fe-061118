@@ -15,6 +15,8 @@ function listCast(cast){
   }
 }
 
+function listReviews()
+
 function clickedMovie(event){
   selectedMovieName = event.srcElement.id;
   console.log('clicked ' + selectedMovieName);
