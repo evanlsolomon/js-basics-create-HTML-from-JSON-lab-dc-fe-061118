@@ -10,11 +10,8 @@ function setInnerHTML(id){
 function listCast(cast){
 let newCastMember = document.createElement("li");
   for(var person of cast){
-  debugger
   newCastMember.innerHTML = person.role + ", " + person.actor;
-  debugger
   document.getElementById('cast').appendChild(newCastMember)
-  debugger
   }
 }
 
